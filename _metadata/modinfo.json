@@ -1,0 +1,22 @@
+{
+    "name": "DRG/DB Class 86",
+    "summary": "The most important and most built universal steam locomotive of DRG.",
+    "description": "The class 86 locomotives were standardised freight locomotives of the Deutsche Reichsbahn. The vehicle fleet was completely different in the early 1920s, so there were efforts to standardise the series. Locomotives were built by numerous German locomotive factories, totalling over 770 units.\nDeutsche Bundesbahn took over 385 locomotives, all but a modest remainder of which were taken out of service by 1968. The last class 86 locomotive was withdrawn in 1974.\nIn the GDR the locomotives remained in service with the Deutsche Reichsbahn until 1989.",
+    "localization" : {
+        "de": {
+            "name": "DRG/DB BR 86",
+            "summary": "Eine der wichtigsten und meist gebauten Dampflokomotiven der DRG.",
+            "description": "Die Lokomotiven der Baureihe 86 waren Einheits-Güterzuglokomotiven der Deutschen Reichsbahn. Der Fahrzeugpark war Anfang der 1920er Jahre völlig unterschiedlich, so dass es Anstrengungen gab, die Baureihen zu vereinheitlichen. Es wurden Loks von zahlreichen deutschen Lokomotivfabriken gebaut, insgesamt über 770 Stück.\nDie Deutsche Bundesbahn übernahm 385 Lokomotiven, die bis 1968 bis auf einen bescheidenen Rest ausgemustert wurde. Die letzte Lok der Baureihe 86 wurde 1974 abgestellt.\nBei der Deutschen Reichsbahn blieben die Loks bis 1989 im Einsatz."
+        }
+    },
+    "authors": [
+        {
+            "name": "ModWerkstatt",
+            "role": "CREATOR"
+        }
+    ],
+    "tags": [
+        "Locomotive"
+    ],
+    "url": "https://www.modwerkstatt.com/downloads/tpf3/br-86"
+}

@@ -1,0 +1,68 @@
+{
+	"en": {
+
+		"menu_br86" : "DRG/DB/DR Class 86",
+	   
+		"br86_1" : "Class 86 DRG",
+		"br86_1_desc" : "The class 86 locomotives were unit freight locomotives of the Deutsche Reichsbahn for branch lines.",
+		"br86_2" : "Class 86 DRG - War engine (1942)",
+		"br86_2_desc" : "The class 86 locomotives were unit freight locomotives of the Deutsche Reichsbahn for branch lines. Wartime version with solid wheel instead of spoke wheel and fewer windows.",
+			
+		"br86_db1" : "Class 86 DB",
+		"br86_db1_desc" : "The class 86 locomotives were standard freight locomotives for branch lines. The Deutsche Bundesbahn owned 365 of them, which were increasingly taken out of service from 1966.",
+		"br86_db2" : "Class 86 DB",
+		"br86_db2_desc" : "The class 86 locomotives were standard freight locomotives for branch lines. The Deutsche Bundesbahn owned 365 of them, which were increasingly taken out of service from 1966. Locomotive with modern three-light headlights and DB biscuit.",
+		"br86_db3" : "Class 086 DB",
+		"br86_db3_desc" : "The class 86 locomotives were standard freight locomotives for branch lines. They were taken out of service from 1966, and from 1968 they were managed as EDV series 086. The last machine was withdrawn in 1974.",
+				
+		"br86_ddr1" : "Class 86 DR",
+		"br86_ddr1_desc" : "The class 86 locomotives were standard freight locomotives for branch lines. The Deutsche Reichsbahn took over 164 locomotives, most of which were used in the Ore Mountains",
+		"br86_ddr2" : "Class 86 DR",
+		"br86_ddr2_desc" : "The class 86 locomotives were standard freight locomotives for branch lines. The Deutsche Reichsbahn took over 164 locomotives, most of which were used in the Ore Mountains. Locomotive with three-light headlights",        
+		"br86_ddr3" : "Class 86.1 DR",
+		"br86_ddr3_desc" : "The class 86 locomotives were standard freight locomotives for branch lines. From 1970 onwards, the locomotives were given EDP-compliant numbering, but most of them were taken out of service from 1973 onwards. The last journey took place in 1989.",
+
+		"offset x-axis": "Offset x-axis",
+		"vehicle": "Vehicle",
+		"asset": "Asset",
+		"height": "Height",
+		"ground": "Ground",
+		"rail": "Rail",
+		"height_tooltip": "Where should be the origin of the height?",
+		"jrm_param_offsetx_tooltip": "Offset in x direction"
+
+},
+	"de": {
+
+		"menu_br86" : "BR 86 DRG/DB/DR",
+				
+		"br86_1" : "BR 86 DRG",
+		"br86_1_desc" : "Die Lokomotiven der Baureihe 86 waren Einheits-Güterzuglokomotiven der Deutschen Reichsbahn für Nebenbahnen.",
+		"br86_2" : "BR 86 DRG - Übergangslok",
+		"br86_2_desc" : "Die Lokomotiven der Baureihe 86 waren Einheits-Güterzuglokomotiven der Deutschen Reichsbahn für Nebenbahnen. Kriegszeitversion mit Vollrad anstatt Speichenrad und weniger Fenstern.",
+				
+		"br86_db1" : "BR 86 DB",
+		"br86_db1_desc" : "Die Lokomotiven der Baureihe 86 waren Einheits-Güterzuglokomotiven für Nebenbahnen. Die Deutsche Bundesbahn besaß 365 Stück, die verstärkt ab 1966 ausgemustert wurden.",
+		"br86_db2" : "BR 86 DB",
+		"br86_db2_desc" : "Die Lokomotiven der Baureihe 86 waren Einheits-Güterzuglokomotiven für Nebenbahnen. Die Deutsche Bundesbahn besaß 365 Stück, die verstärkt ab 1966 ausgemustert wurden. 1974 wurde die letzte Maschine abgestellt. Lokomotive mit modernem Dreilichtspitzensignal und DB Keks.",
+		"br86_db3" : "BR 086 DB",
+		"br86_db3_desc" : "Die Lokomotiven der Baureihe 86 waren Einheits-Güterzuglokomotiven für Nebenbahnen. Sie wurden ab 1966 ausgemustert, ab 1968 wurden sie als EDV-Baureihe 086 geführt. 1974 wurde die letzte Maschine abgestellt.",
+				
+		"br86_ddr1" : "BR 86 DR",
+		"br86_ddr1_desc" : "Die Lokomotiven der Baureihe 86 waren Einheits-Güterzuglokomotiven für Nebenbahnen. Die Deutsche Reichsbahn übernahm 164 Loks, die zumeist im Erzgebirge eingesetzt wurden.",
+		"br86_ddr2" : "BR 86 DR",
+		"br86_ddr2_desc" : "Die Lokomotiven der Baureihe 86 waren Einheits-Güterzuglokomotiven für Nebenbahnen. Die Deutsche Reichsbahn übernahm 164 Loks, die zumeist im Erzgebirge eingesetzt wurden. Lokomotive mit Dreilichtspitzensignal.",
+		"br86_ddr3" : "BR 86.1 DR",
+		"br86_ddr3_desc" : "Die Lokomotiven der Baureihe 86 waren Einheits-Güterzuglokomotiven für Nebenbahnen. Ab 1970 erhielten die Maschinen noch eine EDV-gerechte Nummerierung, wurde großteils aber ab 1973 ausgemustert. Die letzte Fahrt fand im Jahr 1989 statt.",
+
+		"offset x-axis": "Offset x-Achse",
+		"vehicle": "Fahrzeug",
+		"asset": "Asset",
+		"height": "Höhe",
+		"ground": "Boden",
+		"rail": "Schiene",
+		"height_tooltip": "Wonach soll die Höhe gesetzt werden?",
+		"jrm_param_offsetx_tooltip": "Verschiebung in x-Richtung"
+
+	}
+}

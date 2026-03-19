@@ -1,0 +1,1401 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 16.1399993896484375, 4.320201396942138671875, 6.44999980926513671875, },
+			bbMin = { -16.229999542236328125, -4.320201396942138671875, -3.65271091461181640625, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 7.24568462371826171875, 1.58058702945709228515625, 2.196062564849853515625, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "mat/rumpf_drg.mtl", },
+							mesh = "msh/rumpf_drg_lod0.msh",
+							name = "rumpf_drg",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/DRG_tank_lod0.msh",
+							name = "DRG_tank",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "mat/rumpf_drg.mtl", },
+									mesh = "msh/bogie_1_lod0.msh",
+									name = "bogie_1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/beweglich_drg.mtl", },
+									mesh = "msh/rad_1_lod0.msh",
+									name = "a1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+							},
+							name = "bogie_front",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.229509830474853515625, 0, 0.45657098293304443359375, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rad-b1_lod0.msh",
+							name = "a2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6562974452972412109375, 0, 0.69765317440032958984375, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rad-b1_lod0.msh",
+							name = "a3",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.956582486629486083984375, 0, 0.69765317440032958984375, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rad-b2_lod0.msh",
+							name = "a4",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.7418739795684814453125, 0, 0.69765317440032958984375, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rad-b1_lod0.msh",
+							name = "a5",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4128587245941162109375, 0, 0.69765317440032958984375, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "mat/rumpf_drg.mtl", },
+									mesh = "msh/bogie_2_lod0.msh",
+									name = "bogie_2",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/beweglich_drg.mtl", },
+									mesh = "msh/rad_1_lod0.msh",
+									name = "a6",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.910000026226043701171875, 0, -0.123700000345706939697265625, 1, },
+								},
+							},
+							name = "bogie_back",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.113620281219482421875, 0, 0.5527012348175048828125, 1, },
+						},
+						{ 
+							materials = { "mat/innen.mtl", },
+							mesh = "msh/innen_lod0.msh",
+							name = "interior",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/lampe_drg_lod0.msh",
+							name = "lampe_drg",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "mat/glas.mtl", },
+							mesh = "msh/glas_lod0.msh",
+							name = "glas",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							animations = { 
+								front_forward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/front_forward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								front_forward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/front_forward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/train/emissive/train_all_lights.mtl", },
+							mesh = "msh/licht_vorne_weiss_drg_lod0.msh",
+							name = "headlights_fwd",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							animations = { 
+								back_forward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								back_forward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/train/emissive/train_all_lights.mtl", },
+							mesh = "msh/licht_hinten_rot_drg_lod0.msh",
+							name = "taillights_bwd",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							animations = { 
+								front_backward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/front_backward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								front_backward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/front_backward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/train/emissive/train_all_lights.mtl", },
+							mesh = "msh/licht_hinten_weiss_drg_lod0.msh",
+							name = "headlights_bwd",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							animations = { 
+								back_backward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_backward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								back_backward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_backward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/train/emissive/train_all_lights.mtl", },
+							mesh = "msh/licht_vorne_rot_drg_lod0.msh",
+							name = "taillights_fwd",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_0.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_0_lod0.msh",
+							name = "rechts_rod_0",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.737835824489593505859375, -0.0027765147387981414794921875, 0.4040477275848388671875, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_1.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_1_lod0.msh",
+							name = "rechts_rod_1",
+							transf = { 0.999994099140167236328125, 0, -0.003423904068768024444580078125, 0, 0, 1, 0, 0, 0.003423904068768024444580078125, 0, 0.999994099140167236328125, 0, -0.741824686527252197265625, -1.0672099590301513671875, 0.402983844280242919921875, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_2.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_2_lod0.msh",
+							name = "rechts_rod_2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6123187541961669921875, -0.028965927660465240478515625, 0.7169742584228515625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_3.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_3_lod0.msh",
+							name = "rechts_rod_3",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.00682544708251953125, -0.0551041774451732635498046875, 1.3187887668609619140625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_4.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_4_lod0.msh",
+							name = "rechts_rod_4",
+							transf = { 0.629463016986846923828125, 0, -0.0289958380162715911865234375, 0, 0, -0.630130589008331298828125, 0, 0, 0.0289958380162715911865234375, 0, 0.629463016986846923828125, 0, 3.0047171115875244140625, -1.21067297458648681640625, 1.46230566501617431640625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_5.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_5_lod0.msh",
+							name = "rechts_rod_5",
+							transf = { 0.92977237701416015625, 0, 0.3681347370147705078125, 0, 0, 1, 0, 0, -0.3681347370147705078125, 0, 0.92977237701416015625, 0, 3.00350666046142578125, -0.0553471930325031280517578125, 1.4625911712646484375, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_6.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_6_lod0.msh",
+							name = "rechts_rod_6",
+							transf = { 0.86123263835906982421875, 0, 0.277928531169891357421875, 0, 0, 0.621286869049072265625, 0, 0, -0.277928531169891357421875, 0, 0.86123263835906982421875, 0, 1.5701377391815185546875, -1.20430004596710205078125, 1.45875322818756103515625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_7.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_7_lod0.msh",
+							name = "rechts_rod_7",
+							transf = { 0.993868887424468994140625, 0, -0.110564924776554107666015625, 0, 0, 1, 0, 0, 0.110564924776554107666015625, 0, 0.993868887424468994140625, 0, 1.69154369831085205078125, -1.2606217861175537109375, 1.053588390350341796875, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_9.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_9_lod0.msh",
+							name = "rechts_rod_9",
+							transf = { 0.99989426136016845703125, 0, -0.014537489973008632659912109375, 0, 0, 1, 0, 0, 0.014537489973008632659912109375, 0, 0.99989426136016845703125, 0, 2.6393849849700927734375, -0.0523443557322025299072265625, 0.501446664333343505859375, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_0.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_0_lod0.msh",
+							name = "links_rod_0",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.73783576488494873046875, 0, 1.015232086181640625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_1.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_1_lod0.msh",
+							name = "links_rod_1",
+							transf = { 0.964848220348358154296875, 0, -0.2628076076507568359375, 0, 0, 1, 0, 0, 0.2628076076507568359375, 0, 0.964848220348358154296875, 0, -0.741824686527252197265625, 1.067211627960205078125, 0.990481078624725341796875, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_2.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_2_lod0.msh",
+							name = "links_rod_2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6123187541961669921875, 0.022826671600341796875, 0.7169742584228515625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_3.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_3_lod0.msh",
+							name = "links_rod_3",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.96590328216552734375, 0.048964977264404296875, 1.3187887668609619140625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_4.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_4_lod0.msh",
+							name = "links_rod_4",
+							transf = { 0.99993228912353515625, 0, 0.01162920333445072174072265625, 0, 0, 1, 0, 0, -0.01162920333445072174072265625, 0, 0.99993228912353515625, 0, 2.9596302509307861328125, 1.20430004596710205078125, 1.426044464111328125, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_5.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_5_lod0.msh",
+							name = "links_rod_5",
+							transf = { 0.998816430568695068359375, 0, 0.0486367642879486083984375, 0, 0, 1, 0, 0, -0.0486367642879486083984375, 0, 0.998816430568695068359375, 0, 2.957722187042236328125, 0.0492079257965087890625, 1.42632973194122314453125, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_6.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_6_lod0.msh",
+							name = "links_rod_6",
+							transf = { 0.751413524150848388671875, 0, -0.659831583499908447265625, 0, 0, 1, 0, 0, 0.659831583499908447265625, 0, 0.751413524150848388671875, 0, 1.5701377391815185546875, 1.20430004596710205078125, 1.45875322818756103515625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_7.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_7_lod0.msh",
+							name = "links_rod_7",
+							transf = { 0.999310314655303955078125, 0, 0.0371335633099079132080078125, 0, 0, 1, 0, 0, -0.0371335633099079132080078125, 0, 0.999310314655303955078125, 0, 1.3889253139495849609375, 1.1490752696990966796875, 1.06743371486663818359375, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_9.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_9_lod0.msh",
+							name = "links_rod_9",
+							transf = { 0.997093975543975830078125, 0, 0.07618010044097900390625, 0, 0, 1, 0, 0, -0.07618010044097900390625, 0, 0.997093975543975830078125, 0, 2.6393849849700927734375, 0.046205043792724609375, 0.501446664333343505859375, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 150,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "mat/rumpf_drg.mtl", },
+							mesh = "msh/rumpf_lod1.msh",
+							name = "rumpf_drg",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/DRG_tank_lod1.msh",
+							name = "DRG_tank",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "mat/rumpf_drg.mtl", },
+									mesh = "msh/bogie_1_lod1.msh",
+									name = "bogie_1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/beweglich_drg.mtl", },
+									mesh = "msh/rad_1_lod1.msh",
+									name = "a1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+							},
+							name = "bogie_front",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.229509830474853515625, 0, 0.45657098293304443359375, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rad-b1_lod1.msh",
+							name = "a2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6562974452972412109375, 0, 0.69765317440032958984375, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rad-b1_lod1.msh",
+							name = "a3",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.956582486629486083984375, 0, 0.69765317440032958984375, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rad-b2_lod1.msh",
+							name = "a4",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.7418739795684814453125, 0, 0.69765317440032958984375, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rad-b1_lod1.msh",
+							name = "a5",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4128587245941162109375, 0, 0.69765317440032958984375, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "mat/rumpf_drg.mtl", },
+									mesh = "msh/bogie_2_lod1.msh",
+									name = "bogie_2",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/beweglich_drg.mtl", },
+									mesh = "msh/rad_1_lod1.msh",
+									name = "a6",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.910000026226043701171875, 0, -0.123700000345706939697265625, 1, },
+								},
+							},
+							name = "bogie_back",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.113620281219482421875, 0, 0.5527012348175048828125, 1, },
+						},
+						{ 
+							materials = { "mat/innen.mtl", },
+							mesh = "msh/innen_lod1.msh",
+							name = "interior",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/lampe_drg_lod1.msh",
+							name = "lampe_drg",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "mat/glas.mtl", },
+							mesh = "msh/glas_lod0.msh",
+							name = "glas",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							animations = { 
+								front_forward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/front_forward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								front_forward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/front_forward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/train/emissive/train_all_lights.mtl", },
+							mesh = "msh/licht_vorne_weiss_drg_lod0.msh",
+							name = "headlights_fwd",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							animations = { 
+								back_forward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								back_forward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_forward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/train/emissive/train_all_lights.mtl", },
+							mesh = "msh/licht_hinten_rot_drg_lod0.msh",
+							name = "taillights_bwd",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							animations = { 
+								front_backward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/front_backward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								front_backward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/front_backward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/train/emissive/train_all_lights.mtl", },
+							mesh = "msh/licht_hinten_weiss_drg_lod0.msh",
+							name = "headlights_bwd",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							animations = { 
+								back_backward_parts_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_backward_parts_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								back_backward_parts_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/back_backward_parts_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/train/emissive/train_all_lights.mtl", },
+							mesh = "msh/licht_vorne_rot_drg_lod0.msh",
+							name = "taillights_fwd",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_0.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_0_lod0.msh",
+							name = "rechts_rod_0",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.737835824489593505859375, -0.0027765147387981414794921875, 0.4040477275848388671875, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_1.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_1_lod0.msh",
+							name = "rechts_rod_1",
+							transf = { 0.999994099140167236328125, 0, -0.003423904068768024444580078125, 0, 0, 1, 0, 0, 0.003423904068768024444580078125, 0, 0.999994099140167236328125, 0, -0.741824686527252197265625, -1.0672099590301513671875, 0.402983844280242919921875, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_2.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_2_lod0.msh",
+							name = "rechts_rod_2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6123187541961669921875, -0.028965927660465240478515625, 0.7169742584228515625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_3.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_3_lod0.msh",
+							name = "rechts_rod_3",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.00682544708251953125, -0.0551041774451732635498046875, 1.3187887668609619140625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_4.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_4_lod0.msh",
+							name = "rechts_rod_4",
+							transf = { 0.629463016986846923828125, 0, -0.0289958380162715911865234375, 0, 0, -0.630130589008331298828125, 0, 0, 0.0289958380162715911865234375, 0, 0.629463016986846923828125, 0, 3.0047171115875244140625, -1.21067297458648681640625, 1.46230566501617431640625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_5.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_5_lod0.msh",
+							name = "rechts_rod_5",
+							transf = { 0.92977237701416015625, 0, 0.3681347370147705078125, 0, 0, 1, 0, 0, -0.3681347370147705078125, 0, 0.92977237701416015625, 0, 3.00350666046142578125, -0.0553471930325031280517578125, 1.4625911712646484375, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_6.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_6_lod0.msh",
+							name = "rechts_rod_6",
+							transf = { 0.86123263835906982421875, 0, 0.277928531169891357421875, 0, 0, 0.621286869049072265625, 0, 0, -0.277928531169891357421875, 0, 0.86123263835906982421875, 0, 1.5701377391815185546875, -1.20430004596710205078125, 1.45875322818756103515625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_7.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_7_lod0.msh",
+							name = "rechts_rod_7",
+							transf = { 0.993868887424468994140625, 0, -0.110564924776554107666015625, 0, 0, 1, 0, 0, 0.110564924776554107666015625, 0, 0.993868887424468994140625, 0, 1.69154369831085205078125, -1.2606217861175537109375, 1.053588390350341796875, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/rechts_rod_9.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rechts_rod_9_lod0.msh",
+							name = "rechts_rod_9",
+							transf = { 0.99989426136016845703125, 0, -0.014537489973008632659912109375, 0, 0, 1, 0, 0, 0.014537489973008632659912109375, 0, 0.99989426136016845703125, 0, 2.6393849849700927734375, -0.0523443557322025299072265625, 0.501446664333343505859375, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_0.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_0_lod0.msh",
+							name = "links_rod_0",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.73783576488494873046875, 0, 1.015232086181640625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_1.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_1_lod0.msh",
+							name = "links_rod_1",
+							transf = { 0.964848220348358154296875, 0, -0.2628076076507568359375, 0, 0, 1, 0, 0, 0.2628076076507568359375, 0, 0.964848220348358154296875, 0, -0.741824686527252197265625, 1.067211627960205078125, 0.990481078624725341796875, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_2.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_2_lod0.msh",
+							name = "links_rod_2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6123187541961669921875, 0.022826671600341796875, 0.7169742584228515625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_3.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_3_lod0.msh",
+							name = "links_rod_3",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.96590328216552734375, 0.048964977264404296875, 1.3187887668609619140625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_4.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_4_lod0.msh",
+							name = "links_rod_4",
+							transf = { 0.99993228912353515625, 0, 0.01162920333445072174072265625, 0, 0, 1, 0, 0, -0.01162920333445072174072265625, 0, 0.99993228912353515625, 0, 2.9596302509307861328125, 1.20430004596710205078125, 1.426044464111328125, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_5.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_5_lod0.msh",
+							name = "links_rod_5",
+							transf = { 0.998816430568695068359375, 0, 0.0486367642879486083984375, 0, 0, 1, 0, 0, -0.0486367642879486083984375, 0, 0.998816430568695068359375, 0, 2.957722187042236328125, 0.0492079257965087890625, 1.42632973194122314453125, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_6.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_6_lod0.msh",
+							name = "links_rod_6",
+							transf = { 0.751413524150848388671875, 0, -0.659831583499908447265625, 0, 0, 1, 0, 0, 0.659831583499908447265625, 0, 0.751413524150848388671875, 0, 1.5701377391815185546875, 1.20430004596710205078125, 1.45875322818756103515625, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_7.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_7_lod0.msh",
+							name = "links_rod_7",
+							transf = { 0.999310314655303955078125, 0, 0.0371335633099079132080078125, 0, 0, 1, 0, 0, -0.0371335633099079132080078125, 0, 0.999310314655303955078125, 0, 1.3889253139495849609375, 1.1490752696990966796875, 1.06743371486663818359375, 1, },
+						},
+						{ 
+							animations = { 
+								wheels = { 
+									params = { 
+										id = "ani/links_rod_9.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/links_rod_9_lod0.msh",
+							name = "links_rod_9",
+							transf = { 0.997093975543975830078125, 0, 0.07618010044097900390625, 0, 0, 1, 0, 0, -0.07618010044097900390625, 0, 0.997093975543975830078125, 0, 2.6393849849700927734375, 0.046205043792724609375, 0.501446664333343505859375, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 150,
+				visibleTo = 400,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "mat/rumpf_drg.mtl", },
+							mesh = "msh/rumpf_lod2.msh",
+							name = "rumpf_drg",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/DRG_tank_lod2.msh",
+							name = "DRG_tank",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "mat/beweglich_drg.mtl", },
+									mesh = "msh/rad_1_lod2.msh",
+									name = "a1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+							},
+							name = "bogie_front",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.229509830474853515625, 0, 0.45657098293304443359375, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rad-b1_lod2.msh",
+							name = "a2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6562974452972412109375, 0, 0.69765317440032958984375, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rad-b1_lod2.msh",
+							name = "a3",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.956582486629486083984375, 0, 0.69765317440032958984375, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rad-b2_lod2.msh",
+							name = "a4",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.7418739795684814453125, 0, 0.69765317440032958984375, 1, },
+						},
+						{ 
+							materials = { "mat/beweglich_drg.mtl", },
+							mesh = "msh/rad-b1_lod2.msh",
+							name = "a5",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4128587245941162109375, 0, 0.69765317440032958984375, 1, },
+						},
+						{ 
+							children = {
+								{ 
+									materials = { "mat/beweglich_drg.mtl", },
+									mesh = "msh/rad_1_lod2.msh",
+									name = "a6",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.910000026226043701171875, 0, -0.123700000345706939697265625, 1, },
+								},
+							},
+							name = "bogie_back",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.113620281219482421875, 0, 0.5527012348175048828125, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 400,
+				visibleTo = 1400,
+			},
+		},
+		metadata = { 
+			availability = { 
+				yearFrom = 1928,
+				yearTo = 1940,
+			},
+			cost = { 
+				price = -1,
+			},
+			description = { 
+				description = _("br86_1_desc"),
+				name = _("br86_1"),
+			},
+			emissions = { 
+				noise = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+				pollution = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+			},
+			extent = { 
+				bbMax = { 6.7588214874267578125, 1.58058702945709228515625, 4.30782032012939453125, },
+				bbMin = { -6.7854595184326171875, -1.58058702945709228515625, -0.0475490093231201171875, },
+			},
+			landVehicle = { 
+				brakeDeceleration = 2.5,
+				engines = {
+					{ 
+						power = 758,
+						tractiveEffort = 169,
+						type = "STEAM",
+					},
+				},
+				friction = 0.0199999995529651641845703125,
+				topSpeed = 22.22222137451171875,
+				weightEmpty = 88500,
+				weightMaxPayload = 0,
+			},
+			lightSourceList = { 
+				lights = {
+					{ 
+						angleMin = 5,
+						color = { 1, 0.9261314868927001953125, 0.5803921222686767578125, },
+						fadeOutStart = 1400,
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "headlights_fwd",
+						mode = "LIGHT",
+						radius = 10,
+						strength = 2,
+						transf = { 0.98500001430511474609375, 0, -0.1739999949932098388671875, 0, 0, 1, 0, 0, 0.1739999949932098388671875, 0, 0.98500001430511474609375, 0, 6.139999866485595703125, 0.89999997615814208984375, 1.46000003814697265625, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = 1600,
+					},
+					{ 
+						angleMin = 5,
+						color = { 1, 0.9261314868927001953125, 0.5803921222686767578125, },
+						fadeOutStart = 1400,
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "headlights_fwd",
+						mode = "LIGHT",
+						radius = 10,
+						strength = 2,
+						transf = { 0.98500001430511474609375, 0, -0.1739999949932098388671875, 0, 0, 1, 0, 0, 0.1739999949932098388671875, 0, 0.98500001430511474609375, 0, 6.139999866485595703125, -0.89999997615814208984375, 1.46000003814697265625, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = 1600,
+					},
+					{ 
+						angleMin = 5,
+						color = { 0.33725488185882568359375, 0.0079354085028171539306640625, 0.0079354085028171539306640625, },
+						fadeOutStart = 1400,
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "taillights_bwd",
+						mode = "LIGHT",
+						radius = 10,
+						strength = 1,
+						transf = { 0.98500001430511474609375, 0, -0.1739999949932098388671875, 0, 0, 1, 0, 0, 0.1739999949932098388671875, 0, 0.98500001430511474609375, 0, 6.139999866485595703125, 0.89999997615814208984375, 1.46000003814697265625, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = 1600,
+					},
+					{ 
+						angleMin = 5,
+						color = { 0.33725488185882568359375, 0.0079354085028171539306640625, 0.0079354085028171539306640625, },
+						fadeOutStart = 1400,
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "taillights_bwd",
+						mode = "LIGHT",
+						radius = 10,
+						strength = 1,
+						transf = { 0.98500001430511474609375, 0, -0.1739999949932098388671875, 0, 0, 1, 0, 0, 0.1739999949932098388671875, 0, 0.98500001430511474609375, 0, 6.139999866485595703125, -0.89999997615814208984375, 1.46000003814697265625, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = 1600,
+					},
+					{ 
+						angleMin = 5,
+						color = { 1, 0.9261314868927001953125, 0.5803921222686767578125, },
+						fadeOutStart = 1400,
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "headlights_bwd",
+						mode = "LIGHT",
+						radius = 10,
+						strength = 2,
+						transf = { -0.98500001430511474609375, 0, -0.1739999949932098388671875, 0, 0, -1, 0, 0, -0.1739999949932098388671875, 0, 0.98500001430511474609375, 0, -6.230000019073486328125, 0.89999997615814208984375, 1.35000002384185791015625, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = 1600,
+					},
+					{ 
+						angleMin = 5,
+						color = { 1, 0.9261314868927001953125, 0.5803921222686767578125, },
+						fadeOutStart = 1400,
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "headlights_bwd",
+						mode = "LIGHT",
+						radius = 10,
+						strength = 2,
+						transf = { -0.98500001430511474609375, 0, -0.1739999949932098388671875, 0, 0, -1, 0, 0, -0.1739999949932098388671875, 0, 0.98500001430511474609375, 0, -6.230000019073486328125, -0.89999997615814208984375, 1.35000002384185791015625, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = 1600,
+					},
+					{ 
+						angleMin = 5,
+						color = { 0.33725488185882568359375, 0.0079354085028171539306640625, 0.0079354085028171539306640625, },
+						fadeOutStart = 1400,
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "taillights_fwd",
+						mode = "LIGHT",
+						radius = 10,
+						strength = 1,
+						transf = { -0.98500001430511474609375, 0, -0.1739999949932098388671875, 0, 0, -1, 0, 0, -0.1739999949932098388671875, 0, 0.98500001430511474609375, 0, -6.230000019073486328125, 0.89999997615814208984375, 1.35000002384185791015625, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = 1600,
+					},
+					{ 
+						angleMin = 5,
+						color = { 0.33725488185882568359375, 0.0079354085028171539306640625, 0.0079354085028171539306640625, },
+						fadeOutStart = 1400,
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "taillights_fwd",
+						mode = "LIGHT",
+						radius = 10,
+						strength = 1,
+						transf = { -0.98500001430511474609375, 0, -0.1739999949932098388671875, 0, 0, -1, 0, 0, -0.1739999949932098388671875, 0, 0.98500001430511474609375, 0, -6.230000019073486328125, -0.89999997615814208984375, 1.35000002384185791015625, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = 1600,
+					},
+					{ 
+						angleMax = 89,
+						angleMin = 1,
+						color = { 1, 0.9261314868927001953125, 0.5803921222686767578125, },
+						fadeOutStart = 600,
+						invertMask = false,
+						length = 1.5,
+						lightId = "",
+						mask = 32,
+						meshId = "interior",
+						mode = "LIGHT",
+						radius = 2.5,
+						strength = 3,
+						transf = { 1, 0, 0, 0, 0, 0, -1, 0, 0, 1, 0, 0, -3.5, 0, 3.9500000476837158203125, 1, },
+						type = "CYLINDRICAL",
+						visibleFrom = -1,
+						visibleTo = 1600,
+					},
+				},
+			},
+			maintenance = { 
+				lifespan = 36525,
+				runningCosts = -1,
+			},
+			particleSystem = { 
+				emitters = {
+					{ 
+						child = "rumpf_drg",
+						colorOverLifeTime = { 
+							curve = {
+								{ 
+									easing = "Linear",
+									time = 1,
+									value = { 0.2700000107288360595703125, 0.2700000107288360595703125, 0.2700000107288360595703125, },
+								},
+							},
+						},
+						frequency = { 
+							value = 80,
+						},
+						lifeTime = { 
+							randomMinMax = { 
+								max = 6,
+								min = 3,
+							},
+						},
+						particleId = "",
+						position = { 4.11999988555908203125, 0, 4, },
+						shape = { 
+							point = { 
+								maxDir = 0.800000011920928955078125,
+							},
+						},
+						sizeOverLifeTime = { 
+							curve = {
+								{ 
+									easing = "Linear",
+									time = 0,
+									value = { 
+										value = 0.300000011920928955078125,
+									},
+								},
+								{ 
+									easing = "EaseOutSqrt",
+									time = 4,
+									value = { 
+										value = 8,
+									},
+								},
+							},
+						},
+						velocity = { 
+							value = { 0, 0, 8, },
+						},
+						velocityByDirection = { 
+							value = 0,
+						},
+					},
+					{ 
+						child = "rumpf_drg",
+						colorOverLifeTime = { 
+							curve = {
+								{ 
+									easing = "Linear",
+									time = 1,
+									value = { 0.699999988079071044921875, 0.699999988079071044921875, 0.699999988079071044921875, },
+								},
+							},
+						},
+						frequency = { 
+							value = 100,
+						},
+						lifeTime = { 
+							randomMinMax = { 
+								max = 1,
+								min = 0.5,
+							},
+						},
+						particleId = "",
+						position = { 3.5299999713897705078125, -1.0812599658966064453125, 0.709999978542327880859375, },
+						shape = { 
+							point = { 
+								maxDir = 0.800000011920928955078125,
+							},
+						},
+						sizeOverLifeTime = { 
+							curve = {
+								{ 
+									easing = "Linear",
+									time = 0,
+									value = { 
+										value = 0.100000001490116119384765625,
+									},
+								},
+								{ 
+									easing = "EaseOutSqrt",
+									time = 4,
+									value = { 
+										value = 0.300000011920928955078125,
+									},
+								},
+							},
+						},
+						velocity = { 
+							value = { -1, 0, 0, },
+						},
+						velocityByDirection = { 
+							value = 0,
+						},
+					},
+					{ 
+						child = "rumpf_drg",
+						colorOverLifeTime = { 
+							curve = {
+								{ 
+									easing = "Linear",
+									time = 1,
+									value = { 0.699999988079071044921875, 0.699999988079071044921875, 0.699999988079071044921875, },
+								},
+							},
+						},
+						frequency = { 
+							value = 100,
+						},
+						lifeTime = { 
+							randomMinMax = { 
+								max = 1,
+								min = 0.5,
+							},
+						},
+						particleId = "",
+						position = { 3.5299999713897705078125, 1.0812599658966064453125, 0.709999978542327880859375, },
+						shape = { 
+							point = { 
+								maxDir = 0.800000011920928955078125,
+							},
+						},
+						sizeOverLifeTime = { 
+							curve = {
+								{ 
+									easing = "Linear",
+									time = 0,
+									value = { 
+										value = 0.100000001490116119384765625,
+									},
+								},
+								{ 
+									easing = "EaseOutSqrt",
+									time = 4,
+									value = { 
+										value = 0.300000011920928955078125,
+									},
+								},
+							},
+						},
+						velocity = { 
+							value = { -1, 0, 0, },
+						},
+						velocityByDirection = { 
+							value = 0,
+						},
+					},
+				},
+			},
+			railVehicle = { 
+				config = { 
+					axles = { "a1", "a2", "a3", "a4", "a5", "a6", },
+					fakeBogies = { },
+				},
+			},
+			seatProvider = { 
+				crewModels = { },
+				drivingLicense = "RAIL",
+				seats = {
+					{ 
+						animation = "idle",
+						crew = true,
+						group = "rumpf_drg",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.5, -0.949999988079071044921875, 1.65999996662139892578125, 1, },
+					},
+					{ 
+						animation = "idle",
+						crew = true,
+						group = "rumpf_drg",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7000000476837158203125, 0.430000007152557373046875, 1.65999996662139892578125, 1, },
+					},
+					{ 
+						animation = "idle",
+						crew = true,
+						forward = false,
+						group = "rumpf_drg",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.5, -0.949999988079071044921875, 1.65999996662139892578125, 1, },
+					},
+					{ 
+						animation = "idle",
+						crew = true,
+						forward = false,
+						group = "rumpf_drg",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.7000000476837158203125, 0.949999988079071044921875, 1.65999996662139892578125, 1, },
+					},
+				},
+			},
+			soundConfig = { 
+				soundSet = { 
+					name = "sound/br_86.snd",
+				},
+			},
+			transformatorConfig = { 
+				skipFromLod = 2,
+				transformator = { 
+					name = "::/vehicle/train/shared/default_train.trf",
+				},
+			},
+			transportVehicle = { 
+				carrier = "RAIL",
+				compartments = {
+					{ 
+						loadConfigs = {
+							{ 
+								cargoEntry = { 
+									capacity = 4,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { },
+									},
+									loadIndicator = "",
+									seats = { },
+								},
+								toHide = { },
+							},
+						},
+					},
+				},
+				engineTags = { "TRAIN", "ELECTRIC_TRAIN", },
+				groupFileName = "menu_br86.mdl",
+				reversible = true,
+				tags = { "TRAIN", "ELECTRIC_TRAIN", },
+			},
+		},
+		version = 2,
+	}
+end
