@@ -53,10 +53,6 @@ return {
 				speed = -1,
 			},
 		},
-		maintenance = {
-			lifespan = 0,
-			runningCosts = 0,
-		},
 		landVehicle = { 
 			brakeDeceleration = 0.0,
 			engines = { },
@@ -64,8 +60,13 @@ return {
 			topSpeed = 0,
 			weightEmpty = 0,
 		},
+		maintenance = {
+			lifespan = 0,
+			runningCosts = 0,
+		},
 		railVehicle = {
-			configs = { },
+			config = { 
+			},
 		},
 		transformator = {
 			name = "::/vehicle/train/shared/default_train.trf",
