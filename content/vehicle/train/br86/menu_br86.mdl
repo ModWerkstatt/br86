@@ -57,6 +57,13 @@ return {
 			lifespan = 0,
 			runningCosts = 0,
 		},
+		landVehicle = { 
+			brakeDeceleration = 0.0,
+			engines = { },
+			friction = 0,
+			topSpeed = 0,
+			weightEmpty = 0,
+		},
 		railVehicle = {
 			configs = { },
 		},
