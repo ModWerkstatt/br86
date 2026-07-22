@@ -1,45 +1,43 @@
 function data()
-return { 
+return {
 		__version = "",
 		order = 0,
-		params = { 
-			alpha_test = { 
+		params = {
+			alpha_test = {
 				fragmentProperties = {
-					{ 
+					{
 						cutout = false,
 						sorted = false,
 					},
 				},
 			},
-			light_receiver = { 
+			light_receiver = {
 				fragmentProperties = {
-					{ 
+					{
 						isLegacyMaterial = false,
 						lightMask = 2,
 					},
 				},
 			},
-			map_albedo_opacity = { 
-				fragmentSamplers = { 
-					albedoOpacityTex = { 
+			map_albedo_opacity = {
+				fragmentSamplers = {
+					albedoOpacityTex = {
 						fileName = "tex/glas_albedo_opacity.dds",
-						scaleDownAllowed = false,
 						type = "TWOD",
 					},
 				},
 			},
-			map_metal_gloss_ao = { 
-				fragmentSamplers = { 
-					metalGlossAoTex = { 
+			map_metal_gloss_ao = {
+				fragmentSamplers = {
+					metalGlossAoTex = {
 						fileName = "tex/glas_metal_gloss_ao.dds",
-						scaleDownAllowed = false,
 						type = "TWOD",
 					},
 				},
 			},
-			polygon_offset = { 
+			polygon_offset = {
 				fragmentProperties = {
-					{ 
+					{
 						factor = -1,
 						units = -1,
 					},
