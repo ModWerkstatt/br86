@@ -23,8 +23,8 @@ return {
 						},
 						{ 
 							materials = { "mat/beweglich_db1.mtl", },
-							mesh = "msh/DB_tank_lod0.msh",
-							name = "DB_tank",
+							mesh = "msh/db_tank_lod0.msh",
+							name = "db_tank",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{ 
@@ -463,8 +463,8 @@ return {
 						},
 						{ 
 							materials = { "mat/beweglich_db1.mtl", },
-							mesh = "msh/DB_tank_lod1.msh",
-							name = "DB_tank",
+							mesh = "msh/db_tank_lod1.msh",
+							name = "db_tank",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{ 
@@ -903,8 +903,8 @@ return {
 						},
 						{ 
 							materials = { "mat/beweglich_db1.mtl", },
-							mesh = "msh/DB_tank_lod2.msh",
-							name = "DB_tank",
+							mesh = "msh/db_tank_lod2.msh",
+							name = "db_tank",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{ 

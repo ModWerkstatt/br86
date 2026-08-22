@@ -23,8 +23,8 @@ return {
 						},
 						{ 
 							materials = { "mat/beweglich_drg.mtl", },
-							mesh = "msh/DRG_tank_lod0.msh",
-							name = "DRG_tank",
+							mesh = "msh/drg_tank_lod0.msh",
+							name = "drg_tank",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{ 
@@ -463,8 +463,8 @@ return {
 						},
 						{ 
 							materials = { "mat/beweglich_drg.mtl", },
-							mesh = "msh/DRG_tank_lod1.msh",
-							name = "DRG_tank",
+							mesh = "msh/drg_tank_lod1.msh",
+							name = "drg_tank",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{ 
@@ -903,8 +903,8 @@ return {
 						},
 						{ 
 							materials = { "mat/beweglich_drg.mtl", },
-							mesh = "msh/DRG_tank_lod2.msh",
-							name = "DRG_tank",
+							mesh = "msh/drg_tank_lod2.msh",
+							name = "drg_tank",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{ 
